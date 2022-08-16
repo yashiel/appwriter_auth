@@ -1,8 +1,8 @@
 import { Account, Client } from 'appwrite';
 
 const config = {
-	projectId: '62f766ad87b1331f4de6',
-	endpoint: 'http://localhost/v1',
+	projectId: import.meta.env.VITE_APPWRITE_PROJECTID || '62f766ad87b1331f4de6',
+	endpoint: import.meta.env.VITE_APPWRITE_ENDPOINT || 'http://localhost/v1',
 	// database: process.env.REACT_APP_APPWRITE_ENDPOINT || "62f9450d54c6eedb86ae",
 };
 
